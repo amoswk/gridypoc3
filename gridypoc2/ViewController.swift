@@ -15,10 +15,11 @@ let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.
 let itemsPerRow: CGFloat = 4
 var imageSlices: [UIImage] = []
     
-func performSegue(withIdentifier: "showImageArray", sender: nil)
+
   
    
-    @IBOutlet weak var btnImage: UIImageView!
+    @IBOutlet weak var btnImage: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -30,7 +31,7 @@ func performSegue(withIdentifier: "showImageArray", sender: nil)
     }
     
 
-    @IBOutlet weak var btn: NSLayoutConstraint!
+
     
     @IBAction func btn(_ sender: Any) {
         
@@ -43,7 +44,35 @@ func performSegue(withIdentifier: "showImageArray", sender: nil)
         
         
         btnImage.isHidden = false
+        
+        performSegue(withIdentifier: "showImageArray", sender: nil)
     }
+
+    
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //using an identifier to identify the segue, named
+        
+        if segue.identifier == "showImageArray" {
+            guard let arrayVC = segue.destination as? ArrayDisplay else {
+                return
+                
+            }
+            
+            
+            arrayVC.images = imageSlices
+            
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
     
 }
 
@@ -98,24 +127,7 @@ func imageSlice(into howManyPieces: Int, testImage: UIImage) -> [UIImage] {
 
 
 
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
-    //using an identifier to identify the segue, named "showEditorView"
-    
-    if segue.identifier == "showImageArray" {
-        guard let arrayVC = segue.destination as? ArrayDisplay else {
-            return
-        }
-        
-        
-        arrayVC.selectedImage = // ???
-        
-        
-    }
-    
-    
-    
-}
+
 
 
 @available(iOS 13.0, *)
@@ -167,12 +179,6 @@ extension UIView {
     }
     
     
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
-        
-        
-    }
     
 
     
