@@ -9,4 +9,13 @@
 import Foundation
 import UIKit
 
+class ArrayDisplay {
+
 var images: [UIImage]
+    
+    
+    
+    
+    
+
+}
