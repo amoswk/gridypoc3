@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0AB7475256ABA0D00C610C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7474256ABA0D00C610C5 /* AppDelegate.swift */; };
+		B0AB7477256ABA0D00C610C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7476256ABA0D00C610C5 /* SceneDelegate.swift */; };
+		B0AB7479256ABA0D00C610C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7478256ABA0D00C610C5 /* ViewController.swift */; };
+		B0AB747C256ABA0D00C610C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB747A256ABA0D00C610C5 /* Main.storyboard */; };
+		B0AB747E256ABA1100C610C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AB747D256ABA1100C610C5 /* Assets.xcassets */; };
+		B0AB7481256ABA1100C610C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AB747F256ABA1100C610C5 /* LaunchScreen.storyboard */; };
+		B0AB748C256ABA1100C610C5 /* gridypoc2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB748B256ABA1100C610C5 /* gridypoc2Tests.swift */; };
+		B0AB7497256ABA1100C610C5 /* gridypoc2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */; };
+		B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A4256ABB4E00C610C5 /* imageslice.swift */; };
+		B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A6256ABB6A00C610C5 /* imagearray.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0AB7488256ABA1100C610C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB7469256ABA0D00C610C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0AB7470256ABA0D00C610C5;
+			remoteInfo = gridypoc2;
+		};
+		B0AB7493256ABA1100C610C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0AB7469256ABA0D00C610C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0AB7470256ABA0D00C610C5;
+			remoteInfo = gridypoc2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0AB7471256ABA0D00C610C5 /* gridypoc2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridypoc2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AB7474256ABA0D00C610C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0AB7476256ABA0D00C610C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0AB7478256ABA0D00C610C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0AB747B256ABA0D00C610C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0AB747D256ABA1100C610C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0AB7480256ABA1100C610C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0AB7482256ABA1100C610C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AB7487256ABA1100C610C5 /* gridypoc2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gridypoc2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AB748B256ABA1100C610C5 /* gridypoc2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridypoc2Tests.swift; sourceTree = "<group>"; };
+		B0AB748D256ABA1100C610C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AB7492256ABA1100C610C5 /* gridypoc2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gridypoc2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridypoc2UITests.swift; sourceTree = "<group>"; };
+		B0AB7498256ABA1100C610C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AB74A4256ABB4E00C610C5 /* imageslice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageslice.swift; sourceTree = "<group>"; };
+		B0AB74A6256ABB6A00C610C5 /* imagearray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagearray.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0AB746E256ABA0D00C610C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB7484256ABA1100C610C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB748F256ABA1100C610C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0AB7468256ABA0D00C610C5 = {
+			isa = PBXGroup;
+			children = (
+				B0AB7473256ABA0D00C610C5 /* gridypoc2 */,
+				B0AB748A256ABA1100C610C5 /* gridypoc2Tests */,
+				B0AB7495256ABA1100C610C5 /* gridypoc2UITests */,
+				B0AB7472256ABA0D00C610C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0AB7472256ABA0D00C610C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7471256ABA0D00C610C5 /* gridypoc2.app */,
+				B0AB7487256ABA1100C610C5 /* gridypoc2Tests.xctest */,
+				B0AB7492256ABA1100C610C5 /* gridypoc2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0AB7473256ABA0D00C610C5 /* gridypoc2 */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7474256ABA0D00C610C5 /* AppDelegate.swift */,
+				B0AB7476256ABA0D00C610C5 /* SceneDelegate.swift */,
+				B0AB7478256ABA0D00C610C5 /* ViewController.swift */,
+				B0AB74A4256ABB4E00C610C5 /* imageslice.swift */,
+				B0AB74A6256ABB6A00C610C5 /* imagearray.swift */,
+				B0AB747A256ABA0D00C610C5 /* Main.storyboard */,
+				B0AB747D256ABA1100C610C5 /* Assets.xcassets */,
+				B0AB747F256ABA1100C610C5 /* LaunchScreen.storyboard */,
+				B0AB7482256ABA1100C610C5 /* Info.plist */,
+			);
+			path = gridypoc2;
+			sourceTree = "<group>";
+		};
+		B0AB748A256ABA1100C610C5 /* gridypoc2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB748B256ABA1100C610C5 /* gridypoc2Tests.swift */,
+				B0AB748D256ABA1100C610C5 /* Info.plist */,
+			);
+			path = gridypoc2Tests;
+			sourceTree = "<group>";
+		};
+		B0AB7495256ABA1100C610C5 /* gridypoc2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */,
+				B0AB7498256ABA1100C610C5 /* Info.plist */,
+			);
+			path = gridypoc2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0AB7470256ABA0D00C610C5 /* gridypoc2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AB749B256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2" */;
+			buildPhases = (
+				B0AB746D256ABA0D00C610C5 /* Sources */,
+				B0AB746E256ABA0D00C610C5 /* Frameworks */,
+				B0AB746F256ABA0D00C610C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gridypoc2;
+			productName = gridypoc2;
+			productReference = B0AB7471256ABA0D00C610C5 /* gridypoc2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0AB7486256ABA1100C610C5 /* gridypoc2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AB749E256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2Tests" */;
+			buildPhases = (
+				B0AB7483256ABA1100C610C5 /* Sources */,
+				B0AB7484256ABA1100C610C5 /* Frameworks */,
+				B0AB7485256ABA1100C610C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0AB7489256ABA1100C610C5 /* PBXTargetDependency */,
+			);
+			name = gridypoc2Tests;
+			productName = gridypoc2Tests;
+			productReference = B0AB7487256ABA1100C610C5 /* gridypoc2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0AB7491256ABA1100C610C5 /* gridypoc2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0AB74A1256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2UITests" */;
+			buildPhases = (
+				B0AB748E256ABA1100C610C5 /* Sources */,
+				B0AB748F256ABA1100C610C5 /* Frameworks */,
+				B0AB7490256ABA1100C610C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0AB7494256ABA1100C610C5 /* PBXTargetDependency */,
+			);
+			name = gridypoc2UITests;
+			productName = gridypoc2UITests;
+			productReference = B0AB7492256ABA1100C610C5 /* gridypoc2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0AB7469256ABA0D00C610C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Amos Katz";
+				TargetAttributes = {
+					B0AB7470256ABA0D00C610C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B0AB7486256ABA1100C610C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B0AB7470256ABA0D00C610C5;
+					};
+					B0AB7491256ABA1100C610C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B0AB7470256ABA0D00C610C5;
+					};
+				};
+			};
+			buildConfigurationList = B0AB746C256ABA0D00C610C5 /* Build configuration list for PBXProject "gridypoc2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0AB7468256ABA0D00C610C5;
+			productRefGroup = B0AB7472256ABA0D00C610C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0AB7470256ABA0D00C610C5 /* gridypoc2 */,
+				B0AB7486256ABA1100C610C5 /* gridypoc2Tests */,
+				B0AB7491256ABA1100C610C5 /* gridypoc2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0AB746F256ABA0D00C610C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AB7481256ABA1100C610C5 /* LaunchScreen.storyboard in Resources */,
+				B0AB747E256ABA1100C610C5 /* Assets.xcassets in Resources */,
+				B0AB747C256ABA0D00C610C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB7485256ABA1100C610C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB7490256ABA1100C610C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0AB746D256ABA0D00C610C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AB7479256ABA0D00C610C5 /* ViewController.swift in Sources */,
+				B0AB7475256ABA0D00C610C5 /* AppDelegate.swift in Sources */,
+				B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */,
+				B0AB7477256ABA0D00C610C5 /* SceneDelegate.swift in Sources */,
+				B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB7483256ABA1100C610C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AB748C256ABA1100C610C5 /* gridypoc2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AB748E256ABA1100C610C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0AB7497256ABA1100C610C5 /* gridypoc2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0AB7489256ABA1100C610C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0AB7470256ABA0D00C610C5 /* gridypoc2 */;
+			targetProxy = B0AB7488256ABA1100C610C5 /* PBXContainerItemProxy */;
+		};
+		B0AB7494256ABA1100C610C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0AB7470256ABA0D00C610C5 /* gridypoc2 */;
+			targetProxy = B0AB7493256ABA1100C610C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0AB747A256ABA0D00C610C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AB747B256ABA0D00C610C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0AB747F256ABA1100C610C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AB7480256ABA1100C610C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0AB7499256ABA1100C610C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0AB749A256ABA1100C610C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0AB749C256ABA1100C610C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0AB749D256ABA1100C610C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0AB749F256ABA1100C610C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gridypoc2.app/gridypoc2";
+			};
+			name = Debug;
+		};
+		B0AB74A0256ABA1100C610C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gridypoc2.app/gridypoc2";
+			};
+			name = Release;
+		};
+		B0AB74A2256ABA1100C610C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gridypoc2;
+			};
+			name = Debug;
+		};
+		B0AB74A3256ABA1100C610C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94WF9FJ8HN;
+				INFOPLIST_FILE = gridypoc2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Amos.gridypoc2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gridypoc2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0AB746C256ABA0D00C610C5 /* Build configuration list for PBXProject "gridypoc2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB7499256ABA1100C610C5 /* Debug */,
+				B0AB749A256ABA1100C610C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AB749B256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB749C256ABA1100C610C5 /* Debug */,
+				B0AB749D256ABA1100C610C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AB749E256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB749F256ABA1100C610C5 /* Debug */,
+				B0AB74A0256ABA1100C610C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0AB74A1256ABA1100C610C5 /* Build configuration list for PBXNativeTarget "gridypoc2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AB74A2256ABA1100C610C5 /* Debug */,
+				B0AB74A3256ABA1100C610C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0AB7469256ABA0D00C610C5 /* Project object */;
+}
