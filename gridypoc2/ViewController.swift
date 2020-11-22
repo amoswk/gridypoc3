@@ -16,8 +16,9 @@ let itemsPerRow: CGFloat = 4
 var imageSlices: [UIImage] = []
     
     
-    @IBOutlet weak var btnImage: UIButton!
+  
    
+    @IBOutlet weak var btnImage: UIImageView!
     
     
     override func viewDidLoad() {

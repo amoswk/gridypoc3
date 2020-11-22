@@ -78,6 +78,9 @@
                         <viewLayoutGuide key="safeArea" id="smc-VO-823"/>
                     </view>
                     <navigationItem key="navigationItem" id="JX7-Wz-xwA"/>
+                    <connections>
+                        <outlet property="btnImage" destination="ykg-nA-hlu" id="jLC-9O-RzG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7m-9H-O5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

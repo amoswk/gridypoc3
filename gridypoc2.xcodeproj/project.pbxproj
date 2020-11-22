@@ -17,6 +17,7 @@
 		B0AB7497256ABA1100C610C5 /* gridypoc2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */; };
 		B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A4256ABB4E00C610C5 /* imageslice.swift */; };
 		B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A6256ABB6A00C610C5 /* imagearray.swift */; };
+		B0AB74A9256AE1B700C610C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B0AB7498256ABA1100C610C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0AB74A4256ABB4E00C610C5 /* imageslice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageslice.swift; sourceTree = "<group>"; };
 		B0AB74A6256ABB6A00C610C5 /* imagearray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagearray.swift; sourceTree = "<group>"; };
+		B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B0AB7478256ABA0D00C610C5 /* ViewController.swift */,
 				B0AB74A4256ABB4E00C610C5 /* imageslice.swift */,
 				B0AB74A6256ABB6A00C610C5 /* imagearray.swift */,
+				B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */,
 				B0AB747A256ABA0D00C610C5 /* Main.storyboard */,
 				B0AB747D256ABA1100C610C5 /* Assets.xcassets */,
 				B0AB747F256ABA1100C610C5 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				B0AB7479256ABA0D00C610C5 /* ViewController.swift in Sources */,
 				B0AB7475256ABA0D00C610C5 /* AppDelegate.swift in Sources */,
 				B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */,
+				B0AB74A9256AE1B700C610C5 /* DetailViewController.swift in Sources */,
 				B0AB7477256ABA0D00C610C5 /* SceneDelegate.swift in Sources */,
 				B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */,
 			);
