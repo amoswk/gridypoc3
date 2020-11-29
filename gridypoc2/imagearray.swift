@@ -64,6 +64,12 @@ var images: [UIImage] = []
             
     }
     
+    
+    extension ArrayDisplay: UICollectionViewDelegateFlowLayout {
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return CGSize(width: screenWidth, height: screenWidth)
+        }
+    }
     // customize collection view appearance 11/22, find protocol for cell size - how to create 4x4?
     
 
