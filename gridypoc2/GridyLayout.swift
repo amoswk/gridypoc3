@@ -12,9 +12,9 @@ import UIKit
 class GridyLayout: UICollectionViewFlowLayout {
     
     override func prepare() {
-    
+        
         super.prepare()
-
+        
         guard let collectionView = collectionView else { return }
         
         let availableWidth = collectionView.bounds.inset(by: collectionView.layoutMargins).width
@@ -28,10 +28,23 @@ class GridyLayout: UICollectionViewFlowLayout {
         self.sectionInsetReference = .fromSafeArea
         self.minimumLineSpacing = 0
         
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+         let totalSpace = flowLayout.sectionInset.left
+             + flowLayout.sectionInset.right
+             + (flowLayout.minimumInteritemSpacing * CGFloat(maxNumColumns - 1))
+         
+         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(maxNumColumns))
+         return CGSize(width: size, height: size)
+        
     }
     
     
 }
 
 
+
+
+
 //setup collection view for top area of gridy based on remaining screen space. will need one extra cell for "eye" image. 11/29
+}
