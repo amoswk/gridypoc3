@@ -17,9 +17,9 @@ class GridyLayout: UICollectionViewFlowLayout {
         
         guard let collectionView = collectionView else { return }
         
-        let availableWidth = collectionView.bounds.inset(by: collectionView.layoutMargins).width
+        let availableWidth = collectionView.bounds.width
         let maxNumColumns = 4
-        let cellWidth = (availableWidth / CGFloat(maxNumColumns)).rounded(.down)
+        let cellWidth = (availableWidth / CGFloat(maxNumColumns))
         let cellHeight = cellWidth
         
         self.itemSize = CGSize(width: cellWidth, height: cellHeight)
@@ -28,16 +28,8 @@ class GridyLayout: UICollectionViewFlowLayout {
         self.sectionInsetReference = .fromSafeArea
         self.minimumLineSpacing = 0
         
-        func topCollection(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-            let totalSpace = flowLayout.sectionInset.top
-                + flowLayout.sectionInset.top
-                + (flowLayout.minimumInteritemSpacing * CGFloat(maxNumColumns - 1))
-            
-            let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(maxNumColumns))
-            return CGSize(width: size, height: size)
-            
-        }
+        
+        //define separate flow layout for bottom collection view 12/7
         
         
     }

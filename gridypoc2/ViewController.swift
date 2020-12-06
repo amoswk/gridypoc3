@@ -179,11 +179,9 @@ extension UIView {
     }
     
     
-    
-
-    
+        
 }
-
+//12/7 clean up code, whats needed?
 
 class NumberCellCollectionViewCell: UICollectionViewCell {
     

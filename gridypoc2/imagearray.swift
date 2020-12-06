@@ -20,6 +20,8 @@ var images: [UIImage] = []
         
         collectionOutlet.dataSource = self
         
+        collectionOutlet.collectionViewLayout = GridyLayout()
+        
         print(images)
         
     }
@@ -51,7 +53,7 @@ var images: [UIImage] = []
 
                //3
             imageView.image = photo
-
+            cell.contentView.backgroundColor = [UIColor.yellow, UIColor.red, UIColor.green, UIColor.gray].randomElement()
             cell.contentView.addSubview(imageView)
 
             return cell
@@ -65,12 +67,15 @@ var images: [UIImage] = []
     }
     
     
-    extension ArrayDisplay: UICollectionViewDelegateFlowLayout {
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: screenWidth, height: screenWidth)
-        }
-    }
-    // customize collection view appearance 11/22, find protocol for cell size - how to create 4x4?
+ 
+    // 12/6 get a random picture for the screenshots. Get all cells to show a piece of the screenshot
     
 
+}
+
+extension ArrayDisplay: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 70, height: 70)
+    }
 }
