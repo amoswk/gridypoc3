@@ -34,7 +34,15 @@ class GridyLayout: UICollectionViewFlowLayout {
         
     }
     
-    
+    class GameLayout: GridyLayout {
+        
+        
+        
+        
+        
+        
+        
+    }
     
     
     
