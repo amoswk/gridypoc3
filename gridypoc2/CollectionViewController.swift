@@ -15,6 +15,7 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionOutlet: UICollectionView!
     
+    @IBOutlet weak var gameOutlet: UICollectionView!
     
     override func viewDidLoad() {
         
@@ -22,38 +23,32 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
         
         collectionOutlet.collectionViewLayout = GridyLayout()
         
+        gameOutlet.dataSource = self
+        
         print(images)
         
     }
     
-    
-    //  UICollectionViewCell {
-    //
-    //        static let reuseIdentifier = String(describing: NumberCellCollectionViewCell.self)
-    //
-    //        @IBOutlet weak var label: NumberCellCollectionViewCell!
-    //    }
-    //
-    
-    //
-    //
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return images.count
-        
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == collectionOutlet {
+            return images.count
+        }
+return 0
     }
+// 12/13 create another array (gameImages) make this array equal to images.shuffled. Modify func to display game images count for gameOutlet, modify line 42 collectionView func.
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //1
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath)
         
         let photo = images[indexPath.row]
         
-        let imageView = UIImageView(frame: cell.frame)
-        
-        //3
+        let imageView = UIImageView(frame: cell.bounds)
+ 
         imageView.image = photo
-        cell.contentView.backgroundColor = [UIColor.yellow, UIColor.red, UIColor.green, UIColor.gray].randomElement()
+        
         cell.contentView.addSubview(imageView)
     
         

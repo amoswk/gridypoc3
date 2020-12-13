@@ -16,7 +16,7 @@
 		B0AB748C256ABA1100C610C5 /* gridypoc2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB748B256ABA1100C610C5 /* gridypoc2Tests.swift */; };
 		B0AB7497256ABA1100C610C5 /* gridypoc2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */; };
 		B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A4256ABB4E00C610C5 /* imageslice.swift */; };
-		B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A6256ABB6A00C610C5 /* imagearray.swift */; };
+		B0AB74A7256ABB6A00C610C5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A6256ABB6A00C610C5 /* CollectionViewController.swift */; };
 		B0AB74A9256AE1B700C610C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */; };
 		B0AB74AB2574201E00C610C5 /* GridyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB74AA2574201E00C610C5 /* GridyLayout.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		B0AB7496256ABA1100C610C5 /* gridypoc2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridypoc2UITests.swift; sourceTree = "<group>"; };
 		B0AB7498256ABA1100C610C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0AB74A4256ABB4E00C610C5 /* imageslice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageslice.swift; sourceTree = "<group>"; };
-		B0AB74A6256ABB6A00C610C5 /* imagearray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagearray.swift; sourceTree = "<group>"; };
+		B0AB74A6256ABB6A00C610C5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B0AB74AA2574201E00C610C5 /* GridyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridyLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +112,7 @@
 				B0AB7478256ABA0D00C610C5 /* ViewController.swift */,
 				B0AB74AA2574201E00C610C5 /* GridyLayout.swift */,
 				B0AB74A4256ABB4E00C610C5 /* imageslice.swift */,
-				B0AB74A6256ABB6A00C610C5 /* imagearray.swift */,
+				B0AB74A6256ABB6A00C610C5 /* CollectionViewController.swift */,
 				B0AB74A8256AE1B700C610C5 /* DetailViewController.swift */,
 				B0AB747A256ABA0D00C610C5 /* Main.storyboard */,
 				B0AB747D256ABA1100C610C5 /* Assets.xcassets */,
@@ -276,7 +276,7 @@
 				B0AB74A5256ABB4E00C610C5 /* imageslice.swift in Sources */,
 				B0AB74A9256AE1B700C610C5 /* DetailViewController.swift in Sources */,
 				B0AB7477256ABA0D00C610C5 /* SceneDelegate.swift in Sources */,
-				B0AB74A7256ABB6A00C610C5 /* imagearray.swift in Sources */,
+				B0AB74A7256ABB6A00C610C5 /* CollectionViewController.swift in Sources */,
 				B0AB74AB2574201E00C610C5 /* GridyLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
