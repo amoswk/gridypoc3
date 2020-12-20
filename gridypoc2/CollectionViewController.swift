@@ -6,15 +6,18 @@
 //  Copyright © 2020 Amos Katz. All rights reserved.
 //
 
+// 12/20 search apple documentation for an array that can be initialized by a repeating value. add an extra image to assets for use. Fix autolayout/line spacing issue to display all images. top collectionview should be rectangle, bottom collectionview is a square.
+
+
 import Foundation
 import UIKit
 
 class ArrayDisplay: UIViewController, UICollectionViewDataSource {
     
     var images: [UIImage] = []
-    lazy var gameImages: [UIImage] = images.shuffled()
+    var gameImages: [UIImage] = []
     
- 
+    
     @IBOutlet weak var collectionOutlet: UICollectionView!
     
     @IBOutlet weak var gameOutlet: UICollectionView!
@@ -29,6 +32,8 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
         
         gameOutlet.dataSource = self
         
+        gameImages = images.shuffled()
+        
         print(images)
         print(gameImages)
         
@@ -39,53 +44,48 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
         if collectionView == collectionOutlet {
             return images.count
         }
+        
+        if collectionView == gameOutlet {
+            
+            return gameImages.count
+            
+        }
+        
         return 0
     }
     // 12/13 create another array (gameImages) make this array equal to images.shuffled. Modify func to display game images count for gameOutlet, modify line 42 collectionView func.
     
-    func gameView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       
-        if gameView == gameOutlet {
-            return gameImages.count
-        }
-        return 0
-    }
-    
-    func gameView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-           
-           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath)
-           
-           let photo = images[indexPath.row]
-           
-           let imageView = UIImageView(frame: cell.bounds)
-           
-           imageView.image = photo
-           
-           cell.contentView.addSubview(imageView)
-           
-           
-           
-           
-           return cell
-           
-           
-
-       
-           
-       }
     
     
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath)
         
-        let photo = images[indexPath.row]
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath)
         
         let imageView = UIImageView(frame: cell.bounds)
         
-        imageView.image = photo
+        
+        
+        if collectionView == collectionOutlet {
+            
+            let photo = images[indexPath.row]
+            
+            imageView.image = photo
+            
+        }
+        
+        if collectionView == gameOutlet {
+            
+            let photo = gameImages[indexPath.row]
+            
+            imageView.image = photo
+            
+        }
+        
+        
         
         cell.contentView.addSubview(imageView)
         
@@ -98,11 +98,11 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
         
         
         
-    
+        
         
     }
     
-
+    
     
     
     

@@ -26,7 +26,7 @@ class GridyLayout: UICollectionViewFlowLayout {
         self.minimumInteritemSpacing = 5
         self.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         self.sectionInsetReference = .fromSafeArea
-        self.minimumLineSpacing = 50
+        self.minimumLineSpacing = 2
         
         
         
@@ -58,7 +58,7 @@ class GameLayout: UICollectionViewFlowLayout {
           self.minimumInteritemSpacing = 5
           self.sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
           self.sectionInsetReference = .fromSafeArea
-          self.minimumLineSpacing = 3
+          self.minimumLineSpacing = 2
           
     
     
