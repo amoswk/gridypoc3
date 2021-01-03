@@ -16,6 +16,7 @@ class ArrayDisplay: UIViewController, UICollectionViewDataSource {
     
     var images: [UIImage] = []
     var gameImages: [UIImage] = []
+    let arrayNumbers = [Int](repeating: 1, count: 16)
     
     
     @IBOutlet weak var collectionOutlet: UICollectionView!

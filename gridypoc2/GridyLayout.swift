@@ -18,7 +18,7 @@ class GridyLayout: UICollectionViewFlowLayout {
         guard let collectionView = collectionView else { return }
         
         let availableWidth = collectionView.bounds.width
-        let maxNumColumns = 5
+        let maxNumColumns = 4
         let cellWidth = (availableWidth / CGFloat(maxNumColumns))
         let cellHeight = cellWidth
         
